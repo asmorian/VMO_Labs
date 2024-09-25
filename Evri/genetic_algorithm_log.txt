@@ -1,0 +1,477 @@
+Tasks = [20, 18, 14, 13, 12, 19, 17, 16, 19, 15, 20]
+
+Iteration 1 - Best Fitness: 71
+Best Individual: [199, 60, 98, 60, 208, 84, 97, 124, 173, 131, 240]
+
+Individual 1/1 = [247, 191, 84, 3, 131, 144, 24, 98, 20, 132, 65] ---> Fitness 83
+Individual 1/2 = [206, 66, 6, 118, 238, 90, 215, 116, 150, 240, 138] ---> Fitness 87
+Individual 1/3 = [199, 60, 98, 60, 208, 84, 97, 124, 173, 131, 240] ---> Fitness 71
+Individual 1/4 = [245, 106, 26, 64, 19, 1, 121, 27, 9, 123, 135] ---> Fitness 93
+Individual 1/5 = [194, 180, 190, 141, 104, 49, 208, 151, 89, 192, 137] ---> Fitness 84
+Individual 1/6 = [249, 22, 3, 121, 149, 246, 129, 128, 111, 62, 216] ---> Fitness 77
+Individual 1/7 = [64, 174, 226, 128, 244, 130, 36, 184, 244, 53, 157] ---> Fitness 79
+Individual 1/8 = [243, 2, 77, 102, 51, 177, 59, 66, 31, 251, 244] ---> Fitness 96
+Individual 1/9 = [93, 106, 231, 86, 143, 232, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 1/10 = [130, 46, 82, 207, 41, 234, 133, 205, 208, 23, 174] ---> Fitness 87
+
+
+Obj 1 mutated on 5 chromosome ---> Fitness changed from 106 to 106
+Obj 2 mutated on 9 chromosome ---> Fitness changed from 87 to 87
+Obj 3 mutated on 5 chromosome ---> Fitness changed from 82 to 101
+
+Obj 5 mutated on 0 chromosome ---> Fitness changed from 84 to 80
+
+Obj 7 mutated on 7 chromosome ---> Fitness changed from 79 to 79
+Obj 8 mutated on 0 chromosome ---> Fitness changed from 67 to 67
+Obj 9 mutated on 7 chromosome ---> Fitness changed from 111 to 95
+Obj 10 mutated on 3 chromosome ---> Fitness changed from 100 to 87
+Iteration 2 - Best Fitness: 67
+Best Individual: [251, 2, 77, 128, 244, 130, 36, 184, 244, 53, 157]
+
+Individual 2/1 = [247, 191, 84, 3, 131, 144, 24, 98, 20, 132, 65] ---> Fitness 83
+Individual 2/2 = [206, 66, 6, 118, 238, 90, 215, 116, 150, 248, 138] ---> Fitness 87
+Individual 2/3 = [199, 60, 98, 60, 208, 84, 97, 124, 173, 131, 240] ---> Fitness 71
+Individual 2/4 = [245, 180, 190, 141, 104, 49, 208, 151, 89, 192, 137] ---> Fitness 84
+Individual 2/5 = [66, 180, 190, 141, 104, 49, 208, 151, 89, 192, 157] ---> Fitness 80
+Individual 2/6 = [249, 22, 3, 121, 149, 246, 129, 128, 111, 24, 23] ---> Fitness 77
+Individual 2/7 = [64, 174, 226, 128, 244, 130, 36, 186, 244, 53, 157] ---> Fitness 79
+Individual 2/8 = [251, 2, 77, 128, 244, 130, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 2/9 = [93, 106, 231, 86, 143, 232, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 2/10 = [130, 46, 82, 173, 104, 49, 208, 151, 89, 192, 137] ---> Fitness 87
+
+
+Obj 1 mutated on 9 chromosome ---> Fitness changed from 83 to 83
+
+Obj 3 mutated on 6 chromosome ---> Fitness changed from 67 to 67
+Obj 4 mutated on 7 chromosome ---> Fitness changed from 84 to 84
+
+Obj 6 mutated on 5 chromosome ---> Fitness changed from 77 to 77
+Obj 7 mutated on 10 chromosome ---> Fitness changed from 79 to 79
+Obj 8 mutated on 6 chromosome ---> Fitness changed from 68 to 68
+Obj 9 mutated on 5 chromosome ---> Fitness changed from 102 to 102
+
+Iteration 3 - Best Fitness: 67
+Best Individual: [199, 60, 98, 60, 208, 130, 44, 184, 244, 53, 157]
+
+Individual 3/1 = [247, 191, 84, 3, 131, 144, 24, 98, 20, 140, 65] ---> Fitness 83
+Individual 3/2 = [206, 66, 6, 118, 238, 90, 215, 116, 150, 248, 138] ---> Fitness 87
+Individual 3/3 = [199, 60, 98, 60, 208, 130, 44, 184, 244, 53, 157] ---> Fitness 67
+Individual 3/4 = [245, 180, 190, 141, 104, 49, 208, 147, 89, 192, 137] ---> Fitness 84
+Individual 3/5 = [66, 180, 190, 141, 104, 49, 36, 184, 244, 53, 157] ---> Fitness 71
+Individual 3/6 = [249, 22, 3, 121, 149, 242, 129, 128, 111, 24, 23] ---> Fitness 77
+Individual 3/7 = [64, 174, 226, 128, 244, 130, 36, 186, 244, 53, 21] ---> Fitness 79
+Individual 3/8 = [251, 2, 77, 128, 244, 130, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 3/9 = [93, 106, 231, 86, 143, 232, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 3/10 = [130, 46, 82, 173, 104, 49, 208, 151, 89, 192, 137] ---> Fitness 87
+
+
+
+Obj 2 mutated on 4 chromosome ---> Fitness changed from 87 to 99
+Obj 3 mutated on 3 chromosome ---> Fitness changed from 67 to 67
+Obj 4 mutated on 6 chromosome ---> Fitness changed from 69 to 71
+Obj 5 mutated on 10 chromosome ---> Fitness changed from 71 to 71
+Obj 6 mutated on 8 chromosome ---> Fitness changed from 77 to 77
+Obj 7 mutated on 1 chromosome ---> Fitness changed from 79 to 70
+Obj 8 mutated on 0 chromosome ---> Fitness changed from 77 to 77
+Obj 9 mutated on 4 chromosome ---> Fitness changed from 100 to 88
+
+Iteration 4 - Best Fitness: 67
+Best Individual: [199, 60, 77, 132, 244, 130, 36, 184, 244, 53, 157]
+
+Individual 4/1 = [247, 191, 84, 3, 131, 144, 24, 98, 20, 140, 65] ---> Fitness 83
+Individual 4/2 = [206, 66, 6, 118, 238, 90, 215, 116, 150, 248, 138] ---> Fitness 87
+Individual 4/3 = [199, 60, 77, 132, 244, 130, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 4/4 = [245, 180, 190, 141, 104, 49, 80, 147, 89, 53, 21] ---> Fitness 71
+Individual 4/5 = [66, 180, 190, 141, 104, 49, 36, 184, 244, 53, 141] ---> Fitness 71
+Individual 4/6 = [249, 22, 3, 121, 149, 242, 129, 128, 110, 24, 23] ---> Fitness 77
+Individual 4/7 = [64, 46, 226, 128, 244, 130, 36, 186, 244, 53, 157] ---> Fitness 70
+Individual 4/8 = [251, 2, 77, 128, 244, 130, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 4/9 = [93, 106, 231, 86, 143, 232, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 4/10 = [130, 46, 82, 173, 104, 49, 208, 151, 89, 24, 23] ---> Fitness 86
+
+
+
+
+
+
+
+Obj 6 mutated on 10 chromosome ---> Fitness changed from 77 to 77
+Obj 7 mutated on 8 chromosome ---> Fitness changed from 70 to 71
+
+
+Obj 10 mutated on 3 chromosome ---> Fitness changed from 71 to 71
+Iteration 5 - Best Fitness: 67
+Best Individual: [206, 66, 6, 118, 238, 90, 36, 184, 244, 53, 157]
+
+Individual 5/1 = [247, 191, 84, 3, 131, 144, 24, 98, 20, 140, 65] ---> Fitness 83
+Individual 5/2 = [206, 66, 6, 118, 238, 90, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 5/3 = [199, 60, 77, 132, 244, 130, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 5/4 = [245, 180, 190, 141, 104, 49, 80, 147, 89, 53, 21] ---> Fitness 71
+Individual 5/5 = [66, 180, 190, 141, 104, 49, 36, 184, 244, 53, 141] ---> Fitness 71
+Individual 5/6 = [249, 22, 3, 121, 149, 242, 129, 128, 110, 24, 31] ---> Fitness 77
+Individual 5/7 = [64, 46, 226, 128, 244, 130, 36, 186, 244, 53, 157] ---> Fitness 70
+Individual 5/8 = [251, 2, 77, 128, 244, 130, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 5/9 = [93, 106, 231, 86, 143, 232, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 5/10 = [130, 46, 82, 172, 104, 130, 36, 184, 244, 53, 157] ---> Fitness 71
+
+
+
+Obj 2 mutated on 1 chromosome ---> Fitness changed from 84 to 84
+Obj 3 mutated on 10 chromosome ---> Fitness changed from 67 to 67
+Obj 4 mutated on 8 chromosome ---> Fitness changed from 80 to 80
+Obj 5 mutated on 1 chromosome ---> Fitness changed from 91 to 91
+Obj 6 mutated on 3 chromosome ---> Fitness changed from 67 to 67
+Obj 7 mutated on 7 chromosome ---> Fitness changed from 70 to 70
+Obj 8 mutated on 1 chromosome ---> Fitness changed from 67 to 67
+Obj 9 mutated on 2 chromosome ---> Fitness changed from 100 to 100
+Obj 10 mutated on 5 chromosome ---> Fitness changed from 72 to 72
+Iteration 6 - Best Fitness: 67
+Best Individual: [206, 66, 6, 118, 238, 90, 36, 184, 244, 53, 157]
+
+Individual 6/1 = [247, 191, 84, 3, 131, 144, 36, 184, 244, 53, 157] ---> Fitness 73
+Individual 6/2 = [206, 66, 6, 118, 238, 90, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 6/3 = [199, 60, 77, 132, 244, 130, 36, 184, 244, 53, 159] ---> Fitness 67
+Individual 6/4 = [245, 180, 190, 141, 104, 49, 80, 147, 89, 53, 21] ---> Fitness 71
+Individual 6/5 = [66, 180, 190, 141, 104, 49, 36, 184, 244, 53, 141] ---> Fitness 71
+Individual 6/6 = [249, 22, 3, 160, 244, 130, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 6/7 = [64, 46, 226, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 70
+Individual 6/8 = [251, 18, 77, 128, 244, 130, 36, 184, 244, 53, 141] ---> Fitness 67
+Individual 6/9 = [93, 106, 231, 86, 143, 232, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 6/10 = [130, 46, 82, 172, 104, 130, 36, 184, 244, 53, 157] ---> Fitness 71
+
+
+
+
+Obj 3 mutated on 2 chromosome ---> Fitness changed from 67 to 67
+
+Obj 5 mutated on 4 chromosome ---> Fitness changed from 71 to 79
+Obj 6 mutated on 7 chromosome ---> Fitness changed from 83 to 83
+Obj 7 mutated on 3 chromosome ---> Fitness changed from 70 to 83
+
+
+Obj 10 mutated on 0 chromosome ---> Fitness changed from 64 to 84
+Iteration 7 - Best Fitness: 67
+Best Individual: [206, 66, 6, 118, 238, 90, 36, 184, 244, 53, 157]
+
+Individual 7/1 = [247, 191, 84, 3, 104, 130, 36, 184, 244, 53, 157] ---> Fitness 73
+Individual 7/2 = [206, 66, 6, 118, 238, 90, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 7/3 = [199, 60, 93, 132, 244, 130, 36, 184, 244, 53, 159] ---> Fitness 67
+Individual 7/4 = [245, 180, 190, 141, 104, 49, 80, 147, 89, 53, 21] ---> Fitness 71
+Individual 7/5 = [66, 180, 190, 141, 104, 49, 36, 184, 244, 53, 141] ---> Fitness 71
+Individual 7/6 = [249, 22, 3, 160, 244, 130, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 7/7 = [64, 46, 226, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 70
+Individual 7/8 = [251, 18, 77, 128, 244, 130, 36, 184, 244, 53, 159] ---> Fitness 67
+Individual 7/9 = [93, 106, 231, 86, 143, 232, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 7/10 = [130, 46, 82, 172, 104, 130, 36, 184, 244, 53, 157] ---> Fitness 71
+
+
+Obj 1 mutated on 5 chromosome ---> Fitness changed from 73 to 92
+
+Obj 3 mutated on 6 chromosome ---> Fitness changed from 67 to 67
+Obj 4 mutated on 7 chromosome ---> Fitness changed from 71 to 71
+Obj 5 mutated on 7 chromosome ---> Fitness changed from 71 to 71
+Obj 6 mutated on 1 chromosome ---> Fitness changed from 67 to 67
+
+
+Obj 9 mutated on 7 chromosome ---> Fitness changed from 100 to 100
+
+Iteration 8 - Best Fitness: 67
+Best Individual: [206, 66, 6, 118, 238, 130, 36, 184, 244, 53, 159]
+
+Individual 8/1 = [247, 191, 84, 3, 104, 130, 36, 184, 244, 53, 157] ---> Fitness 73
+Individual 8/2 = [206, 66, 6, 118, 238, 130, 36, 184, 244, 53, 159] ---> Fitness 67
+Individual 8/3 = [199, 60, 93, 132, 244, 130, 44, 184, 244, 53, 157] ---> Fitness 67
+Individual 8/4 = [245, 180, 190, 141, 104, 49, 80, 145, 89, 53, 21] ---> Fitness 71
+Individual 8/5 = [66, 180, 190, 141, 104, 49, 36, 152, 244, 53, 157] ---> Fitness 71
+Individual 8/6 = [249, 20, 3, 160, 244, 130, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 8/7 = [64, 46, 226, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 70
+Individual 8/8 = [251, 18, 77, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 8/9 = [93, 106, 231, 86, 143, 232, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 8/10 = [130, 46, 82, 172, 104, 130, 36, 184, 244, 53, 157] ---> Fitness 71
+
+
+
+
+Obj 3 mutated on 9 chromosome ---> Fitness changed from 67 to 67
+Obj 4 mutated on 5 chromosome ---> Fitness changed from 67 to 67
+
+
+Obj 7 mutated on 2 chromosome ---> Fitness changed from 70 to 70
+
+Obj 9 mutated on 2 chromosome ---> Fitness changed from 100 to 100
+
+Iteration 9 - Best Fitness: 67
+Best Individual: [206, 66, 77, 128, 244, 130, 36, 190, 244, 53, 157]
+
+Individual 9/1 = [247, 191, 84, 3, 104, 130, 36, 190, 244, 53, 157] ---> Fitness 73
+Individual 9/2 = [206, 66, 77, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 9/3 = [199, 60, 3, 160, 244, 130, 36, 184, 244, 37, 157] ---> Fitness 67
+Individual 9/4 = [245, 66, 6, 118, 238, 131, 36, 184, 244, 53, 159] ---> Fitness 67
+Individual 9/5 = [66, 180, 190, 141, 104, 49, 36, 152, 244, 53, 157] ---> Fitness 71
+Individual 9/6 = [249, 20, 3, 160, 244, 130, 36, 184, 244, 53, 157] ---> Fitness 67
+Individual 9/7 = [64, 46, 98, 128, 244, 130, 36, 190, 244, 53, 159] ---> Fitness 70
+Individual 9/8 = [251, 18, 77, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 9/9 = [93, 106, 231, 86, 143, 232, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 9/10 = [130, 46, 82, 172, 104, 130, 36, 184, 244, 53, 157] ---> Fitness 71
+
+
+
+Obj 2 mutated on 9 chromosome ---> Fitness changed from 67 to 67
+Obj 3 mutated on 2 chromosome ---> Fitness changed from 68 to 68
+Obj 4 mutated on 1 chromosome ---> Fitness changed from 67 to 67
+Obj 5 mutated on 0 chromosome ---> Fitness changed from 67 to 84
+
+
+Obj 8 mutated on 1 chromosome ---> Fitness changed from 67 to 67
+Obj 9 mutated on 7 chromosome ---> Fitness changed from 80 to 96
+Obj 10 mutated on 2 chromosome ---> Fitness changed from 64 to 64
+Iteration 10 - Best Fitness: 64
+Best Individual: [130, 46, 66, 172, 244, 130, 36, 190, 244, 53, 157]
+
+Individual 10/1 = [247, 191, 84, 3, 104, 130, 36, 190, 244, 53, 157] ---> Fitness 73
+Individual 10/2 = [206, 66, 77, 128, 244, 130, 36, 190, 244, 165, 157] ---> Fitness 67
+Individual 10/3 = [199, 60, 3, 160, 244, 130, 36, 184, 244, 37, 157] ---> Fitness 67
+Individual 10/4 = [245, 74, 6, 118, 238, 131, 36, 184, 244, 53, 159] ---> Fitness 67
+Individual 10/5 = [66, 180, 190, 141, 104, 49, 36, 152, 244, 53, 157] ---> Fitness 71
+Individual 10/6 = [249, 20, 3, 160, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 10/7 = [64, 46, 98, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 70
+Individual 10/8 = [251, 26, 77, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 10/9 = [93, 106, 231, 86, 143, 232, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 10/10 = [130, 46, 66, 172, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+
+
+Obj 1 mutated on 7 chromosome ---> Fitness changed from 78 to 94
+
+Obj 3 mutated on 0 chromosome ---> Fitness changed from 67 to 84
+
+Obj 5 mutated on 6 chromosome ---> Fitness changed from 71 to 71
+
+Obj 7 mutated on 3 chromosome ---> Fitness changed from 84 to 84
+Obj 8 mutated on 5 chromosome ---> Fitness changed from 67 to 67
+Obj 9 mutated on 5 chromosome ---> Fitness changed from 80 to 80
+Obj 10 mutated on 9 chromosome ---> Fitness changed from 64 to 64
+Iteration 11 - Best Fitness: 64
+Best Individual: [130, 46, 66, 172, 244, 130, 36, 190, 244, 52, 157]
+
+Individual 11/1 = [247, 191, 84, 3, 104, 130, 36, 190, 244, 53, 157] ---> Fitness 73
+Individual 11/2 = [206, 66, 77, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 11/3 = [199, 60, 3, 160, 244, 130, 36, 184, 244, 37, 157] ---> Fitness 67
+Individual 11/4 = [245, 74, 6, 118, 238, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 11/5 = [66, 180, 190, 141, 104, 49, 4, 152, 244, 53, 157] ---> Fitness 71
+Individual 11/6 = [249, 20, 3, 160, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 11/7 = [64, 46, 98, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 70
+Individual 11/8 = [251, 26, 77, 128, 244, 162, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 11/9 = [93, 106, 231, 86, 143, 236, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 11/10 = [130, 46, 66, 172, 244, 130, 36, 190, 244, 52, 157] ---> Fitness 64
+
+
+Obj 1 mutated on 8 chromosome ---> Fitness changed from 73 to 73
+Obj 2 mutated on 6 chromosome ---> Fitness changed from 67 to 69
+Obj 3 mutated on 6 chromosome ---> Fitness changed from 67 to 67
+
+
+Obj 6 mutated on 7 chromosome ---> Fitness changed from 67 to 67
+
+Obj 8 mutated on 4 chromosome ---> Fitness changed from 67 to 67
+
+
+Iteration 12 - Best Fitness: 64
+Best Individual: [130, 46, 66, 172, 244, 130, 36, 190, 244, 53, 157]
+
+Individual 12/1 = [247, 191, 84, 3, 104, 130, 36, 190, 252, 53, 157] ---> Fitness 73
+Individual 12/2 = [206, 66, 77, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 12/3 = [199, 60, 3, 160, 244, 130, 52, 190, 244, 53, 157] ---> Fitness 67
+Individual 12/4 = [245, 74, 6, 118, 238, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 12/5 = [66, 180, 190, 141, 104, 49, 4, 152, 244, 53, 157] ---> Fitness 71
+Individual 12/6 = [249, 20, 3, 160, 244, 130, 36, 188, 244, 53, 157] ---> Fitness 67
+Individual 12/7 = [64, 46, 98, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 70
+Individual 12/8 = [251, 26, 77, 128, 212, 162, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 12/9 = [93, 106, 231, 86, 143, 236, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 12/10 = [130, 46, 66, 172, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+
+
+Obj 1 mutated on 0 chromosome ---> Fitness changed from 73 to 73
+Obj 2 mutated on 6 chromosome ---> Fitness changed from 67 to 69
+Obj 3 mutated on 0 chromosome ---> Fitness changed from 67 to 84
+Obj 4 mutated on 6 chromosome ---> Fitness changed from 67 to 67
+Obj 5 mutated on 2 chromosome ---> Fitness changed from 71 to 85
+
+Obj 7 mutated on 10 chromosome ---> Fitness changed from 70 to 70
+
+Obj 9 mutated on 10 chromosome ---> Fitness changed from 83 to 83
+Obj 10 mutated on 10 chromosome ---> Fitness changed from 64 to 80
+Iteration 13 - Best Fitness: 64
+Best Individual: [130, 46, 66, 172, 244, 130, 36, 190, 244, 53, 157]
+
+Individual 13/1 = [243, 191, 84, 3, 104, 130, 36, 190, 244, 53, 157] ---> Fitness 73
+Individual 13/2 = [206, 66, 77, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 13/3 = [199, 60, 3, 160, 244, 130, 52, 190, 244, 53, 157] ---> Fitness 67
+Individual 13/4 = [245, 74, 6, 118, 238, 130, 4, 190, 244, 53, 157] ---> Fitness 67
+Individual 13/5 = [66, 180, 190, 141, 104, 49, 4, 152, 244, 53, 157] ---> Fitness 71
+Individual 13/6 = [249, 20, 3, 160, 244, 130, 36, 188, 244, 53, 157] ---> Fitness 67
+Individual 13/7 = [64, 46, 98, 128, 244, 130, 36, 188, 244, 53, 221] ---> Fitness 70
+Individual 13/8 = [251, 26, 77, 128, 212, 162, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 13/9 = [93, 106, 231, 86, 143, 236, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 13/10 = [130, 46, 66, 172, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+
+
+
+
+Obj 3 mutated on 8 chromosome ---> Fitness changed from 67 to 67
+
+Obj 5 mutated on 1 chromosome ---> Fitness changed from 71 to 71
+
+Obj 7 mutated on 4 chromosome ---> Fitness changed from 70 to 70
+Obj 8 mutated on 4 chromosome ---> Fitness changed from 67 to 67
+
+
+Iteration 14 - Best Fitness: 64
+Best Individual: [130, 46, 66, 172, 244, 130, 36, 190, 244, 53, 157]
+
+Individual 14/1 = [243, 191, 84, 3, 104, 130, 36, 190, 244, 53, 157] ---> Fitness 73
+Individual 14/2 = [206, 66, 77, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 14/3 = [199, 60, 3, 160, 244, 130, 36, 190, 228, 53, 157] ---> Fitness 67
+Individual 14/4 = [245, 74, 6, 118, 238, 130, 4, 190, 244, 53, 157] ---> Fitness 67
+Individual 14/5 = [66, 176, 190, 141, 104, 49, 4, 152, 244, 53, 157] ---> Fitness 71
+Individual 14/6 = [249, 20, 3, 160, 244, 130, 36, 188, 244, 53, 157] ---> Fitness 67
+Individual 14/7 = [64, 46, 98, 128, 245, 130, 36, 188, 244, 53, 221] ---> Fitness 70
+Individual 14/8 = [251, 26, 77, 128, 244, 162, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 14/9 = [93, 106, 231, 86, 143, 236, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 14/10 = [130, 46, 66, 172, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+
+
+Obj 1 mutated on 4 chromosome ---> Fitness changed from 67 to 64
+Obj 2 mutated on 9 chromosome ---> Fitness changed from 80 to 80
+Obj 3 mutated on 8 chromosome ---> Fitness changed from 67 to 71
+Obj 4 mutated on 4 chromosome ---> Fitness changed from 67 to 67
+
+Obj 6 mutated on 7 chromosome ---> Fitness changed from 67 to 67
+
+Obj 8 mutated on 0 chromosome ---> Fitness changed from 67 to 67
+Obj 9 mutated on 8 chromosome ---> Fitness changed from 90 to 90
+
+Iteration 15 - Best Fitness: 64
+Best Individual: [243, 66, 77, 128, 116, 130, 36, 190, 244, 53, 157]
+
+Individual 15/1 = [243, 66, 77, 128, 116, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+Individual 15/2 = [206, 66, 77, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 15/3 = [199, 60, 3, 160, 244, 130, 36, 190, 228, 53, 157] ---> Fitness 67
+Individual 15/4 = [245, 74, 6, 118, 236, 130, 4, 190, 244, 53, 157] ---> Fitness 67
+Individual 15/5 = [66, 176, 190, 141, 104, 49, 4, 152, 244, 53, 157] ---> Fitness 71
+Individual 15/6 = [249, 20, 3, 160, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 15/7 = [64, 46, 98, 128, 245, 130, 36, 188, 244, 53, 221] ---> Fitness 70
+Individual 15/8 = [243, 26, 77, 128, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 67
+Individual 15/9 = [93, 106, 231, 86, 143, 236, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 15/10 = [130, 46, 66, 172, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+
+
+Obj 1 mutated on 10 chromosome ---> Fitness changed from 64 to 75
+Obj 2 mutated on 6 chromosome ---> Fitness changed from 64 to 64
+Obj 3 mutated on 6 chromosome ---> Fitness changed from 67 to 67
+
+Obj 5 mutated on 1 chromosome ---> Fitness changed from 84 to 82
+Obj 6 mutated on 9 chromosome ---> Fitness changed from 67 to 67
+
+
+
+Obj 10 mutated on 2 chromosome ---> Fitness changed from 72 to 72
+Iteration 16 - Best Fitness: 64
+Best Individual: [243, 66, 77, 128, 116, 130, 36, 190, 244, 53, 157]
+
+Individual 16/1 = [243, 66, 77, 128, 116, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+Individual 16/2 = [206, 66, 77, 128, 116, 130, 52, 190, 244, 53, 157] ---> Fitness 64
+Individual 16/3 = [199, 60, 3, 160, 244, 130, 4, 190, 228, 53, 157] ---> Fitness 67
+Individual 16/4 = [245, 74, 6, 118, 244, 130, 36, 190, 228, 53, 157] ---> Fitness 67
+Individual 16/5 = [66, 176, 190, 141, 104, 49, 4, 152, 244, 53, 157] ---> Fitness 71
+Individual 16/6 = [249, 20, 3, 160, 244, 130, 36, 190, 244, 55, 157] ---> Fitness 67
+Individual 16/7 = [64, 46, 98, 128, 245, 130, 4, 190, 244, 53, 157] ---> Fitness 70
+Individual 16/8 = [243, 66, 77, 128, 116, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+Individual 16/9 = [93, 106, 231, 86, 143, 236, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 16/10 = [130, 46, 66, 172, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+
+
+Obj 1 mutated on 4 chromosome ---> Fitness changed from 80 to 80
+Obj 2 mutated on 2 chromosome ---> Fitness changed from 64 to 69
+Obj 3 mutated on 2 chromosome ---> Fitness changed from 67 to 67
+Obj 4 mutated on 0 chromosome ---> Fitness changed from 67 to 67
+Obj 5 mutated on 9 chromosome ---> Fitness changed from 71 to 76
+Obj 6 mutated on 4 chromosome ---> Fitness changed from 67 to 67
+Obj 7 mutated on 3 chromosome ---> Fitness changed from 84 to 84
+Obj 8 mutated on 9 chromosome ---> Fitness changed from 67 to 67
+Obj 9 mutated on 1 chromosome ---> Fitness changed from 80 to 80
+Obj 10 mutated on 1 chromosome ---> Fitness changed from 64 to 64
+Iteration 17 - Best Fitness: 64
+Best Individual: [243, 66, 77, 128, 116, 130, 36, 190, 244, 53, 157]
+
+Individual 17/1 = [243, 66, 77, 128, 116, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+Individual 17/2 = [206, 66, 77, 128, 116, 130, 52, 190, 244, 53, 157] ---> Fitness 64
+Individual 17/3 = [199, 60, 67, 160, 244, 130, 36, 190, 228, 53, 157] ---> Fitness 67
+Individual 17/4 = [181, 74, 6, 118, 244, 130, 4, 190, 244, 53, 157] ---> Fitness 67
+Individual 17/5 = [66, 176, 190, 141, 104, 49, 4, 152, 244, 53, 157] ---> Fitness 71
+Individual 17/6 = [249, 20, 3, 160, 228, 130, 36, 190, 244, 55, 157] ---> Fitness 67
+Individual 17/7 = [64, 46, 98, 128, 245, 130, 4, 190, 244, 53, 157] ---> Fitness 70
+Individual 17/8 = [243, 66, 77, 128, 116, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+Individual 17/9 = [93, 98, 231, 86, 143, 236, 98, 230, 222, 24, 23] ---> Fitness 80
+Individual 17/10 = [130, 38, 66, 172, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+
+
+Obj 1 mutated on 9 chromosome ---> Fitness changed from 64 to 64
+Obj 2 mutated on 5 chromosome ---> Fitness changed from 64 to 64
+
+Obj 4 mutated on 6 chromosome ---> Fitness changed from 64 to 64
+Obj 5 mutated on 3 chromosome ---> Fitness changed from 71 to 71
+Obj 6 mutated on 3 chromosome ---> Fitness changed from 64 to 64
+Obj 7 mutated on 1 chromosome ---> Fitness changed from 70 to 70
+Obj 8 mutated on 0 chromosome ---> Fitness changed from 64 to 84
+Obj 9 mutated on 6 chromosome ---> Fitness changed from 80 to 68
+
+Iteration 18 - Best Fitness: 64
+Best Individual: [243, 66, 77, 128, 116, 130, 36, 190, 244, 61, 157]
+
+Individual 18/1 = [243, 66, 77, 128, 116, 130, 36, 190, 244, 61, 157] ---> Fitness 64
+Individual 18/2 = [206, 66, 77, 128, 116, 128, 52, 190, 244, 53, 157] ---> Fitness 64
+Individual 18/3 = [199, 60, 67, 160, 244, 130, 36, 190, 228, 53, 157] ---> Fitness 67
+Individual 18/4 = [181, 74, 6, 128, 116, 130, 53, 190, 244, 53, 157] ---> Fitness 64
+Individual 18/5 = [66, 176, 190, 157, 104, 49, 4, 190, 244, 53, 157] ---> Fitness 71
+Individual 18/6 = [249, 20, 77, 132, 116, 130, 52, 190, 244, 53, 157] ---> Fitness 64
+Individual 18/7 = [64, 42, 98, 128, 245, 130, 4, 190, 244, 53, 157] ---> Fitness 70
+Individual 18/8 = [243, 66, 77, 128, 116, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+Individual 18/9 = [93, 98, 231, 86, 143, 236, 66, 230, 222, 24, 23] ---> Fitness 68
+Individual 18/10 = [130, 38, 66, 172, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+
+
+
+Obj 2 mutated on 2 chromosome ---> Fitness changed from 64 to 78
+Obj 3 mutated on 8 chromosome ---> Fitness changed from 67 to 67
+Obj 4 mutated on 10 chromosome ---> Fitness changed from 64 to 75
+Obj 5 mutated on 7 chromosome ---> Fitness changed from 71 to 71
+
+Obj 7 mutated on 7 chromosome ---> Fitness changed from 70 to 82
+Obj 8 mutated on 1 chromosome ---> Fitness changed from 64 to 64
+Obj 9 mutated on 4 chromosome ---> Fitness changed from 68 to 68
+
+Iteration 19 - Best Fitness: 64
+Best Individual: [243, 66, 77, 128, 116, 130, 36, 190, 244, 61, 157]
+
+Individual 19/1 = [243, 66, 77, 128, 116, 130, 36, 190, 244, 61, 157] ---> Fitness 64
+Individual 19/2 = [206, 66, 77, 128, 116, 128, 52, 190, 244, 53, 157] ---> Fitness 64
+Individual 19/3 = [199, 60, 67, 160, 244, 130, 36, 190, 228, 53, 157] ---> Fitness 67
+Individual 19/4 = [181, 74, 6, 128, 116, 130, 53, 190, 244, 53, 157] ---> Fitness 64
+Individual 19/5 = [66, 176, 190, 157, 104, 49, 4, 188, 244, 53, 157] ---> Fitness 71
+Individual 19/6 = [249, 20, 77, 132, 116, 130, 52, 190, 244, 53, 157] ---> Fitness 64
+Individual 19/7 = [64, 42, 98, 128, 245, 130, 4, 190, 244, 53, 157] ---> Fitness 70
+Individual 19/8 = [243, 74, 77, 128, 116, 130, 36, 190, 228, 53, 157] ---> Fitness 64
+Individual 19/9 = [93, 98, 231, 86, 141, 236, 66, 230, 222, 24, 23] ---> Fitness 68
+Individual 19/10 = [130, 38, 66, 172, 244, 130, 36, 190, 244, 53, 157] ---> Fitness 64
+
+
+Obj 1 mutated on 7 chromosome ---> Fitness changed from 64 to 64
+
+Obj 3 mutated on 1 chromosome ---> Fitness changed from 67 to 85
+
+
+Obj 6 mutated on 10 chromosome ---> Fitness changed from 64 to 64
+Obj 7 mutated on 6 chromosome ---> Fitness changed from 70 to 70
+
+
+
