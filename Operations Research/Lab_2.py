@@ -20,13 +20,15 @@ def main(page: flet.Page):
     a_enter = flet.TextField('2, 3, 3', border_color='lightblue', width=250)
     b_enter = flet.TextField('1, 6, 7', border_color='lightblue', width=250)
     t_enter = flet.TextField('438, 747, 812', border_color='lightblue', width=250)
-    r_enter = flet.TextField('4, 5', border_color='lightblue', width=250)
+    r_enter = flet.TextField('7, 5', border_color='lightblue', width=250)
 
     max_profit_text = flet.Text(value="")
     sol_A = flet.Text(value="")
     sol_B = flet.Text(value="")
+    min_profit_text = flet.Text(value="")
+    prices = flet.Text(value="")
 
-    def button_click(e):
+    def maximize(_):
         a = string_to_list(a_enter.value)
         b = string_to_list(b_enter.value)
         c = string_to_list(r_enter.value)
@@ -46,6 +48,29 @@ def main(page: flet.Page):
         max_profit_text.value = f"{max_profit}"
         sol_A.value = f"{solution[0]}"
         sol_B.value = f"{solution[1]}"
+
+        # Обновляем страницу
+        page.update()
+
+    def minimize(_):
+        a = string_to_list(a_enter.value)
+        b = string_to_list(b_enter.value)
+        c = string_to_list(r_enter.value)
+        for i in range(len(c)):
+            c[i] = - c[i]
+
+        A = []
+        for i in range(len(a)):
+            A.append([a[i], b[i]])
+
+        A = np.array(A)
+        T = np.array([string_to_list(t_enter.value)])
+
+        dual_solution, min_cost = simp.solve_dual(c, A, b)
+
+        # Обновляем текстовые поля
+        min_profit_text.value = f"{min_cost}"
+        prices.value = f"{dual_solution}"
 
         # Обновляем страницу
         page.update()
@@ -77,7 +102,8 @@ def main(page: flet.Page):
                 flet.Row([
                     flet.Text('r', weight=flet.FontWeight.BOLD, width=10),
                     r_enter,
-                    flet.IconButton(flet.icons.UPLOAD, on_click=button_click)
+                    flet.IconButton(flet.icons.UPLOAD, on_click=maximize),
+                    flet.IconButton(flet.icons.DOWNLOAD, on_click=minimize)
                 ],
                     alignment=flet.MainAxisAlignment.START),
                 flet.Divider(color='white'),
@@ -96,6 +122,14 @@ def main(page: flet.Page):
                     flet.Text('Кол-во B:', weight=flet.FontWeight.BOLD),
                     sol_B
                 ]),
+                flet.Row([
+                    flet.Text('Двойств. задача:', weight=flet.FontWeight.BOLD),
+                    min_profit_text
+                ]),
+                flet.Row([
+                    flet.Text('Цены на ресурсы:', weight=flet.FontWeight.BOLD),
+                    prices
+                ])
             ])
         ])
 
