@@ -13,7 +13,7 @@ def main(page: flet.Page):
     page.title = 'Lab_1'
     page.theme_mode = 'dark'
     page.vertical_alignment = flet.MainAxisAlignment.START
-    page.window.width = 360
+    page.window.width = 410
     page.window.height = 600
 
     # Создание переменных виджетов
@@ -40,7 +40,7 @@ def main(page: flet.Page):
             A.append([a[i], b[i]])
 
         A = np.array(A)
-        T = np.array([string_to_list(t_enter.value)])
+        T = string_to_list(t_enter.value)
 
         solution, max_profit = simp.simplex(c, A, T)
 
@@ -64,9 +64,9 @@ def main(page: flet.Page):
             A.append([a[i], b[i]])
 
         A = np.array(A)
-        T = np.array([string_to_list(t_enter.value)])
+        T = string_to_list(t_enter.value)
 
-        dual_solution, min_cost = simp.solve_dual(c, A, b)
+        dual_solution, min_cost = simp.solve_dual(c, A, T)
 
         # Обновляем текстовые поля
         min_profit_text.value = f"{min_cost}"
