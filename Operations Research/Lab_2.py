@@ -1,6 +1,23 @@
 import flet
 import numpy as np
 import simp
+from scipy.optimize import linprog
+
+# Целевая функция
+c = [-1, -2]  # Коэффициенты целевой функции
+
+# Ограничения
+A = [[1, 1], [3, 2]]  # Коэффициенты ограничений
+b = [5, 12]  # Правая часть ограничений
+
+# Ограничения переменных (не отрицательность)
+x_bounds = (0, None)
+
+# Решение задачи
+result = linprog(c, A_ub=A, b_ub=b, bounds=[x_bounds, x_bounds], method='highs')
+
+# Печать результатов
+print(result)
 
 
 def string_to_list(number_string):
@@ -66,11 +83,15 @@ def main(page: flet.Page):
         A = np.array(A)
         T = string_to_list(t_enter.value)
 
-        dual_solution, min_cost = simp.solve_dual(c, A, T)
+        result = linprog(c, A_ub=A, b_ub=T, bounds=[x_bounds, x_bounds], method='highs')
+        print(result.get('fun'))
+
+        marginals = - (result.get('ineqlin').get('marginals'))
+        fun = - (result.get('fun'))
 
         # Обновляем текстовые поля
-        min_profit_text.value = f"{min_cost}"
-        prices.value = f"{dual_solution}"
+        min_profit_text.value = f"{fun}"
+        prices.value = f"{marginals}"
 
         # Обновляем страницу
         page.update()

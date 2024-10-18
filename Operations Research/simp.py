@@ -46,21 +46,6 @@ def simplex(c, A, b):
     return solution, max_value
 
 
-def solve_dual(c, A, b):
-    # Преобразуем b в массив NumPy
-    b = np.array(b)
-    c = np.array(c)
-
-    # Транспонируем матрицу ограничений для двойственной задачи
-    A_dual = A.T
-    b_dual = -c  # В двойственной задаче правая часть берётся с обратным знаком
-    c_dual = -b  # Целевая функция двойственной задачи – минимизация b
-
-    # Решаем двойственную задачу
-    solution, min_cost = simplex(c_dual, A_dual, b_dual)
-    return solution, min_cost
-
-
 if __name__ == "__main__":
     # Пример данных для прямой задачи
     r1 = 7  # Прибыль за двигатель A
