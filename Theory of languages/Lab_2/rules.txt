@@ -1,0 +1,3 @@
+kw;check|eq
+const;T|F
+id;[a-z]+
