@@ -5,21 +5,21 @@ def atbash(encoded_text):
     return new_text
 
 
-with open('mumu.txt', 'r') as file:
+with open('Lab_3/Mumu.txt', 'r') as file:
     text = file.read()
 
 unique_chars = sorted(set(text))
 alphabet_len = len(unique_chars)
 print(unique_chars)
-print("Длинна алфавита", alphabet_len)
+print("Р”Р»РёРЅРЅР° Р°Р»С„Р°РІРёС‚Р°", alphabet_len)
 
 new_book = atbash(text)
 
-with open('new_mumu.txt', 'w', encoding='Windows-1251') as file:
+with open('Lab_2/new_mumu.txt', 'w', encoding='Windows-1251') as file:
     encoded_file = file.write(new_book)
 
-input("Нажмите Enter, чтобы декодировать...")
+input("Р—Р°РіР»СѓС€РєР°")
 decoded_book = atbash(new_book)
 
-with open('new_mumu.txt', 'w', encoding='Windows-1251') as file:
+with open('Lab_2/new_mumu.txt', 'w', encoding='Windows-1251') as file:
     decoded_file = file.write(decoded_book)

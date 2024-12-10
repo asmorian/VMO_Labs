@@ -74,6 +74,13 @@ def psd_num(a, b, c, m, length):
     return nums
 
 
+def create_randoms(len):
+    a, b, c, = not_rand_rand(uptime)
+    randoms = psd_num(a, b, c, m, len)
+
+    return randoms
+
+
 def main():
     global nums
     a, b, c, = not_rand_rand(uptime)
@@ -92,7 +99,7 @@ def main():
         text = ""
         for i in range(len(nums)):
             if i < len(nums) - 1:
-                text += (str(nums[i]) + ', ')
+                text += (str(nums[i]))
             else:
                 text += str(nums[i])
         file.write(text)
@@ -112,4 +119,3 @@ def main():
     plt.show()
 
 
-# main()

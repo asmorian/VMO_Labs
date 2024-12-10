@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_2_1.py" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_2_2.py" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/CodingMethods/hp.txt" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/CodingMethods/hp2.txt" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/CodingMethods/hp3.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_2/Lab_2_1.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_2/Lab_2_2.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_2/Mumu.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_2/hp.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_2/hp2.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_2/hp3.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_2/hp_result.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_3/Mumu.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_3/encoded_Mumu.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_3/result.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_3/test.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_3/test2.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_3/test3.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/CodingMethods/Lab_3/test5.txt" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/CodingMethods/text.py" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
