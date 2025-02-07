@@ -1,10 +1,82 @@
+import random
 from PIL import Image
 from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *
+from sympy import false
 
 # Размер окна
 width, height = 800, 600
+
+pos = 0
+
+move_trigger = 0
+rotate_trigger = 0
+water_height = 0
+is_moved = False
+is_rotated = False
+
+# Позиция и угол вращения чайника
+teapot_pos_y = 0.0  # Начальная позиция по оси Y
+teapot_rotation = 0.0  # Начальный угол вращения
+
+particles = [{"x": 0.0, "y": 0.0, "z": 0.0, "speed": random.uniform(0.02, 0.05)} for _ in range(100)]
+
+
+def draw_water_particles():
+    set_material("blue")  # Цвет воды
+    glPointSize(5.0)  # Размер частиц
+
+    glBegin(GL_POINTS)
+    for p in particles:
+        # Рисуем частицу
+        glVertex3f(p["x"], p["y"], p["z"])
+
+        # Обновляем положение частицы
+        p["y"] -= p["speed"]  # Двигается вниз
+
+        # Если частица упала слишком низко, сбрасываем её вверх
+        if p["y"] < -1.0:
+            p["x"] = random.uniform(-0.05, 0.05)
+            p["y"] = 0.8
+            p["z"] = random.uniform(-0.05, 0.05)
+    glEnd()
+
+
+def update():
+    global teapot_pos_y, teapot_rotation
+    global move_trigger
+    global rotate_trigger
+    global is_moved
+    global is_rotated
+
+    # Сдвиг
+    if not is_moved:
+        if move_trigger == 0:
+            teapot_pos_y += 0.0009
+            if teapot_pos_y >= 2:
+                move_trigger = 1
+                is_moved = True
+        elif move_trigger and teapot_pos_y >= -0.5:
+            teapot_pos_y -= 0.0009
+            if teapot_pos_y <= 0:
+                move_trigger = 1
+
+    # Вращение
+    if is_moved and not is_rotated:
+        if rotate_trigger == 0:
+            teapot_rotation += 0.015
+            if teapot_rotation >= 40.0:
+                rotate_trigger = 1
+                is_rotated = True
+        else:
+            teapot_rotation -= 0.015
+            if teapot_rotation <= 0.0:
+                rotate_trigger = 0
+                is_moved = False
+
+    # Перерисовываем сцену
+    glutPostRedisplay()
 
 
 def load_texture(image_path):
@@ -97,47 +169,78 @@ def draw_textured_cube(size):
 
 
 def draw_teapot():
-    # Чайник
-    # Текстурированный чайник
-    glEnable(GL_TEXTURE_2D)  # Включить текстурирование
-    glBindTexture(GL_TEXTURE_2D, teapot_texture)  # Привязать текстуру
+    global water_height
+    global is_rotated
 
-    # Включить автоматическую генерацию текстурных координат
+    # Чайник
+    glEnable(GL_TEXTURE_2D)  # Включить текстурирование
+    glBindTexture(GL_TEXTURE_2D, teapot_texture)
+
     glEnable(GL_TEXTURE_GEN_S)
     glEnable(GL_TEXTURE_GEN_T)
     glTexGeni(GL_S, GL_TEXTURE_GEN_MODE, GL_OBJECT_LINEAR)
     glTexGeni(GL_T, GL_TEXTURE_GEN_MODE, GL_OBJECT_LINEAR)
 
-    set_material("white")  # Настройка материала
+    set_material("white")
+
+    # Сохраняем матрицу перед трансформацией чайника
     glPushMatrix()
-    glTranslatef(-2, 1, -3)
+    glTranslatef(-1 + teapot_pos_y, teapot_pos_y, -3)  # Поднимаем чайник по оси Y
+    glRotatef(15, -1.0, 0.0, 0.0)  # Вращаем вокруг оси Y
+    glRotatef(teapot_rotation, 0.0, 0.0, -1.0)  # Вращаем вокруг оси Y
+
     glRotatef(30.0, 1.0, 0.0, 0.0)
     glRotatef(20.0, 0.0, -1.0, 0.0)
-    glutSolidTeapot(1)  # Рисуем чайник
+    glutSolidTeapot(1)
+    glPopMatrix()  # Восстанавливаем матрицу
 
-    # Отключить автоматическую генерацию текстурных координат
     glDisable(GL_TEXTURE_GEN_S)
     glDisable(GL_TEXTURE_GEN_T)
 
     # Стол
+    glPushMatrix()
     set_material("grey")
-    glTranslatef(1.5, -4.75, 0)
+    glPushMatrix()  # Сохраняем матрицу для стола
+    glTranslatef(0, -6, -5.5)
+    glRotatef(20.0, 1, -1.0, 0.0)
     glEnable(GL_TEXTURE_2D)
-    draw_textured_cube(8)
+    draw_textured_cube(10)
     glDisable(GL_TEXTURE_2D)
+    glPopMatrix()
 
     # Чашка
-    # Корпус
+    glPushMatrix()
     set_material("blue")
-    glTranslatef(2.0, 5.5, 1.0)
-    glRotatef(90, 1.0, 0.0, 0.0)
-    gluCylinder(gluNewQuadric(), 0.5, 0.5, 1, 20, 20)
+    glTranslatef(2, 0, -1)  # Смещаем вверх по оси Y для стола
+    glRotatef(100, 1.0, 0.0, 0.0)  # Поворачиваем чашку
+    gluCylinder(gluNewQuadric(), 0.5, 0.5, 1, 20, 20)  # Корпус чашки
 
-    # Ручка
+    # Ручка чашки
     glRotatef(90, 1.0, 1.0, 0.0)
     glRotatef(45, 1.0, -1.0, 1.0)
     glTranslatef(0.25, 0.7, 0.0)
     glutSolidTorus(0.05, 0.3, 30, 30)
+    glPopMatrix()
+
+    # "Чай"
+    glPushMatrix()
+    set_material("white")
+    glTranslatef(2.02, -1, -1.2)  # Смещаем вверх по оси Y для стола
+    glRotatef(-82, 1.0, 0.0, 0.0)  # Поворачиваем чашку
+    glutSolidCylinder(0.49, 0.1 + water_height, 20, 20)
+    glPopMatrix()
+
+    if is_rotated:
+        glPushMatrix()
+        glTranslatef(1.9, 0.22, -1)
+        draw_water_particles()
+        glPopMatrix()
+        if water_height < 0.9:
+            water_height += 0.0003
+        else:
+            is_rotated = False
+
+    glPopMatrix()  # Восстанавливаем матрицу для чашки
 
 
 def set_material(color=None, light_mode=None):
@@ -210,7 +313,6 @@ def display():
 
     # Нарисовать объект
     draw_teapot()
-
     glutSwapBuffers()  # Обменять буферы
 
 
@@ -230,15 +332,14 @@ def reshape(w, h):
 def main():
     """Главная функция программы."""
     glutInit()
-    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH)  # Двойная буферизация, цвет, глубина
-    glutInitWindowSize(width, height)  # Размер окна
-    glutCreateWindow(b"Table and tea")  # Создать окно
-
-    init()  # Инициализация OpenGL
-
-    glutDisplayFunc(display)  # Установить функцию отображения
-    glutReshapeFunc(reshape)  # Установить функцию изменения размера окна
-    glutMainLoop()  # Запустить главный цикл GLUT
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH)
+    glutInitWindowSize(width, height)
+    glutCreateWindow(b"Table and tea")
+    init()
+    glutDisplayFunc(display)
+    glutReshapeFunc(reshape)
+    glutIdleFunc(update)  # Добавляем функцию для обновления сцены
+    glutMainLoop()
 
 
 if __name__ == "__main__":

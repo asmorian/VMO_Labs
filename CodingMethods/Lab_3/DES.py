@@ -201,7 +201,7 @@ final_perm = [40, 8, 48, 16, 56, 24, 64, 32,
 def encrypt(pt, rkb):
     # Initial Permutation
     pt = permute(pt, initial_perm, 64)
-    bin2hex(pt)
+    # bin2hex(pt)
 
     # Splitting
     left = pt[0:32]
@@ -211,14 +211,14 @@ def encrypt(pt, rkb):
         right_expanded = permute(right, exp_d, 48)
 
         # XOR RoundKey[i] and right_expanded
-        xor_x = xor(right_expanded, rkb[i])
+        xor_right = xor(right_expanded, rkb[i])
 
-        # S-boxex: substituting the value from s-box table by calculating row and column
+        # S-boxes: substituting the value from s-box table by calculating row and column
         sbox_str = ""
         for j in range(0, 8):
-            row = bin2dec(int(xor_x[j * 6] + xor_x[j * 6 + 5]))
+            row = bin2dec(int(xor_right[j * 6] + xor_right[j * 6 + 5]))
             col = bin2dec(
-                int(xor_x[j * 6 + 1] + xor_x[j * 6 + 2] + xor_x[j * 6 + 3] + xor_x[j * 6 + 4]))
+                int(xor_right[j * 6 + 1] + xor_right[j * 6 + 2] + xor_right[j * 6 + 3] + xor_right[j * 6 + 4]))
             val = sbox[j][row][col]
             sbox_str = sbox_str + dec2bin(val)
 
@@ -230,7 +230,7 @@ def encrypt(pt, rkb):
         left = result
 
         # Swapper
-        if (i != 15):
+        if i != 15:
             left, right = right, left
 
     # Combination

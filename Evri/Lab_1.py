@@ -64,38 +64,38 @@ def half_step(t):
             p_1.append(item)
     return p_1, p_2
 
-#
-# task_string_list_range = input("Нижний и верхний предел T: ").split(", ")
-# task_list_range = map(int, task_string_list_range)
-# task_list_range = list(task_list_range)
-#
-# task_list_size = int(input("Кол-во T: "))
-# task_list = []
-# for i in range(task_list_size):
-#     task_list.append(random.randint(task_list_range[0], task_list_range[1]))
-# print("T = ", task_list)
-# proc_num = int(input("Введите кол-во процессоров N: "))
-#
-# matrix = []
-# for i in range(proc_num):
-#     matrix.append(task_list)
-# rotated = tuple(zip(*matrix[::-1]))
-#
-# sort_rotated = sorted(rotated)
-# rev_sort_rotated = list(reversed(sort_rotated))
-#
-# print("Неотсортированная матрица")
-# for i in range(len(rotated)):
-#     print(rotated[i])
-# print("----------------------------\nОтсортированная по возрастанию")
-# for i in range(len(sort_rotated)):
-#     print(sort_rotated[i])
-# print("----------------------------\nОтсортированная по убыванию")
-# for i in range(len(rev_sort_rotated)):
-#     print(rev_sort_rotated[i])
-#
-# print("----------------------------",
-#       "\nДля неотсортированной матрицы: ", crit_way(rotated),
-#       "\nДля сортированной в порядке возрастания: ", crit_way(sort_rotated),
-#       "\nДля сортированной в порядке убывания: ", crit_way(rev_sort_rotated),
-#       "\nМетодом половинного деления: ", half_division(rev_sort_rotated))
+
+task_string_list_range = input("Нижний и верхний предел T: ").split(", ")
+task_list_range = map(int, task_string_list_range)
+task_list_range = list(task_list_range)
+
+task_list_size = int(input("Кол-во T: "))
+task_list = []
+for i in range(task_list_size):
+    task_list.append(random.randint(task_list_range[0], task_list_range[1]))
+print("T = ", task_list)
+proc_num = int(input("Введите кол-во процессоров N: "))
+
+matrix = []
+for i in range(proc_num):
+    matrix.append(task_list)
+rotated = tuple(zip(*matrix[::-1]))
+
+sort_rotated = sorted(rotated)
+rev_sort_rotated = list(reversed(sort_rotated))
+
+print("Неотсортированная матрица")
+for i in range(len(rotated)):
+    print(rotated[i])
+print("----------------------------\nОтсортированная по возрастанию")
+for i in range(len(sort_rotated)):
+    print(sort_rotated[i])
+print("----------------------------\nОтсортированная по убыванию")
+for i in range(len(rev_sort_rotated)):
+    print(rev_sort_rotated[i])
+
+print("----------------------------",
+      "\nДля неотсортированной матрицы: ", crit_way(rotated),
+      "\nДля сортированной в порядке возрастания: ", crit_way(sort_rotated),
+      "\nДля сортированной в порядке убывания: ", crit_way(rev_sort_rotated),
+      "\nМетодом половинного деления: ", half_division(rev_sort_rotated))
